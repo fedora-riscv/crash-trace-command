@@ -3,7 +3,7 @@
 Summary: Trace extension module for the crash utility
 Name: crash-trace-command
 Version: 3.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPLv2
 Source: https://github.com/fujitsu/crash-trace/archive/v%{version}/%{name}-%{version}.tar.gz
 URL: https://github.com/fujitsu/crash-trace
@@ -37,5 +37,8 @@ install -m 0755 -t %{buildroot}%{_libdir}/crash/extensions %{_builddir}/%{repona
 %license COPYING
 
 %changelog
+* Fri Feb 19 2021 HATAYAMA Daisuke <d.hatayama@fujitsu.com> - 3.0-2
+- Makefile: set DT_SONAME to trace.so
+- Makefile: fix build failure on aarch64 and ppc64le
 * Fri Jan 22 2021 HATAYAMA Daisuke <d.hatayama@fujitsu.com> - 3.0-1
 - Initial crash-trace-command package
