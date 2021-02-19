@@ -14,6 +14,8 @@ BuildRequires: gcc
 Requires: trace-cmd
 Requires: crash >= 7.2.0-2
 
+Patch0001: 0001-Makefile-set-DT_SONAME-to-trace.so.patch
+
 %description
 Command for reading ftrace data from a dump file.
 
