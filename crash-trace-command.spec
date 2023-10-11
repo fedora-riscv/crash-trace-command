@@ -16,6 +16,7 @@ Requires: crash >= 7.2.0-2
 
 Patch0001: 0001-Makefile-set-DT_SONAME-to-trace.so.patch
 Patch0002: 0002-Makefile-fix-build-failure-on-aarch64-and-ppc64le.patch
+Patch0003: 0003-trace-Support-module-memory-layout-change-on-Linux-6.patch
 
 %description
 Command for reading ftrace data from a dump file.
