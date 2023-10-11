@@ -3,7 +3,7 @@
 Summary: Trace extension module for the crash utility
 Name: crash-trace-command
 Version: 3.0
-Release: 8%{?dist}
+Release: 9%{?dist}
 License: GPL-2.0-only
 Source: https://github.com/fujitsu/crash-trace/archive/v%{version}/%{name}-%{version}.tar.gz
 URL: https://github.com/fujitsu/crash-trace
@@ -38,6 +38,9 @@ install -m 0755 -t %{buildroot}%{_libdir}/crash/extensions %{_builddir}/%{repona
 %license COPYING
 
 %changelog
+* Wed Oct 11 2023 HATAYAMA Daisuke <d.hatayama@fujitsu.com> - 3.0-9
+- trace: Support module memory layout change on Linux 6.4
+
 * Tue Sep 12 2023 HATAYAMA Daisuke <d.hatayama@fujitsu.com> - 3.0-8
 - Migrate to SPDX license format
 
