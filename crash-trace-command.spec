@@ -9,10 +9,10 @@ Source: https://github.com/fujitsu/crash-trace/archive/v%{version}/%{name}-%{ver
 URL: https://github.com/fujitsu/crash-trace
 ExclusiveOS: Linux
 ExclusiveArch: aarch64 ppc64le s390x x86_64
-BuildRequires: crash-devel >= 7.2.0-2
+BuildRequires: crash-devel >= 8.0.3-3
 BuildRequires: gcc
 Requires: trace-cmd
-Requires: crash >= 7.2.0-2
+Requires: crash >= 8.0.3-3
 
 Patch0001: 0001-Makefile-set-DT_SONAME-to-trace.so.patch
 Patch0002: 0002-Makefile-fix-build-failure-on-aarch64-and-ppc64le.patch
