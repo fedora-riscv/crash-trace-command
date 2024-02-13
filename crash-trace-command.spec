@@ -3,12 +3,12 @@
 Summary: Trace extension module for the crash utility
 Name: crash-trace-command
 Version: 3.0
-Release: 9%{?dist}
+Release: 9.rv64%{?dist}
 License: GPL-2.0-only
 Source: https://github.com/fujitsu/crash-trace/archive/v%{version}/%{name}-%{version}.tar.gz
 URL: https://github.com/fujitsu/crash-trace
 ExclusiveOS: Linux
-ExclusiveArch: aarch64 ppc64le s390x x86_64
+ExclusiveArch: aarch64 ppc64le s390x x86_64 riscv64
 BuildRequires: crash-devel >= 8.0.3-3
 BuildRequires: gcc
 Requires: trace-cmd
